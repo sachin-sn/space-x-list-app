@@ -1,0 +1,18 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - printenv
+      - npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws s3 cp /build/* s3://space-x-list-sapient-test --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive
+
+artifacts:
+  files:
+    - build*/**
+  discard-paths: yes

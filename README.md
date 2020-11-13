@@ -15,6 +15,7 @@ https://space-x-list-sapient-test.s3.amazonaws.com/index.html
 - Tweaked the styles to make it look better for mobile and desktop view
 - Added some finishing touches like tweaking touches like `no matching records found` message in case of the records not found and loaing messages
 - placed the code in github (https://github.com/sachin-sn/space-x-list-app) and built and deployed the code to AWS S3 (https://space-x-list-sapient-test.s3.amazonaws.com/index.html).
+- I have added CI/CD pipline aws codebuild pipline yml file, (not linked to aws code build as this is a puclic repository)
 
 ## Social links
 
