@@ -1,0 +1,51 @@
+@import "./../../_colors.scss";
+.list-item-container {
+  .list-item-banner {
+    margin: 0 auto;
+    width: 180px;
+    background-color: $light-grey;
+    padding: 10px;
+  }
+  .list-item-body {
+    .list-item-title {
+      font-size: 14px;
+      color: $blue;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .list-item-text {
+      font-size: 14px;
+      color: $black;
+      label {
+        font-weight: 500;
+      }
+      span,
+      ul > li {
+        margin-left: 5px;
+        font-weight: 300;
+        color: $blue;
+      }
+      ul {
+        margin: 2px 5px;
+        padding-inline-start: 15px;
+        li {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .list-item-container {
+    display: flex;
+    flex-wrap: nowrap;
+    .list-item-banner {
+      width: 49%;
+    }
+    .list-item-body {
+      width: 49%;
+      padding: 10px;
+    }
+  }
+}
